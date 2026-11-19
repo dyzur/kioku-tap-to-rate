@@ -146,11 +146,13 @@ uses the same events in the same page for its exit-full-screen swipe.
 ./build.sh        # -> dist/tap-to-rate.ankiaddon
 ```
 
-Pushing a tag builds the package on CI and attaches it to a GitHub release:
+Publishing a release: create the tag, then attach the built file by hand —
+**Releases › Draft a new release**, pick the tag, drag in
+`dist/tap-to-rate.ankiaddon`, publish.
 
 ```sh
-git tag -a v0.1.0 -m "v0.1.0"
-git push origin v0.1.0
+git tag -a v0.2.0 -m "v0.2.0"
+git push origin v0.2.0
 ```
 
 ## Layout
@@ -163,7 +165,6 @@ git push origin v0.1.0
 | `config.md` | the help shown in **Tools › Add-ons › Config** |
 | `build.sh` | packs those four into `dist/tap-to-rate.ankiaddon` |
 | `run-tests.sh`, `tests/` | the tests, not shipped in the package |
-| `.github/workflows/` | tests on every push, package attached on a tag |
 
 ## Known limits
 
