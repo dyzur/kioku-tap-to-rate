@@ -1,0 +1,12 @@
+{
+    "enabled": true,
+    "question_tap_shows_answer": true,
+    "answer_left_ease": 1,
+    "answer_right_ease": 3,
+    "answer_middle_ease": 0,
+    "answer_middle_width": 0.25,
+    "tap_slop_px": 14,
+    "tap_max_ms": 600,
+    "cooldown_ms": 250,
+    "force_any_device": false
+}
